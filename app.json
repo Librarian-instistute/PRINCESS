@@ -1,0 +1,194 @@
+{
+      "name": "𓊈𒆜PRINCESS𒆜𓊉",
+      "description": " An Strongest & Sequered Telegram Group Manager Bot And also Open saurce Which Is Based On Marie.",
+      "keywords": [
+         "telegram",
+         "anime",
+         "group",
+         "manager",
+         "𓊈𒆜PRINCESS𒆜𓊉"
+      ],   
+   "repository": "https://github.com/PURHSHOTTAM/PRINCESS/",
+   "addons": [
+      {
+         "options": {
+            "version": "13"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }     
+  ],      
+   "env": {
+      "TOKEN": {
+         "description": "💫YOUR  `TOKEN` CAN BE FOUND HERE➡️ http://t.me/BotFather💫",
+         "required": true,
+         "value": ""
+      },
+      "API_ID": {
+         "description": "💫GET YOUR `API_ID`FROM ➡️ my.telegram.org, USED FOR TELETHON BASED MODULES💫.",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "💫GET YOUR `API_HASH FROM `➡️ my.telegram.org, USED FOR TELETHON BASED MODULES💫.",
+         "required": true,
+         "value": ""
+      },    
+      "SQLALCHEMY_DATABASE_URI": {
+         "description": "💫YOUR postgres sql db, EMPTY THIS FIELD IF YOU DON'T HAVE💫.",
+         "required": false,
+         "value": "sqldbtype://username:pw@hostname:port/db_name"
+      },
+      "HEROKU_API_KEY": {
+         "description": "💫YOUR `HEROKU_API_KEY` YOU CAN GET IT FROM ➡️[HEROKU](https://dashboard.heroku.com/account)💫",
+         "required": false,
+         "value": ""
+      },
+      "HEROKU_APP_NAME": {
+         "description": "💫YOUR APP NAME `HEROKU_APP_NAME`REQUIRED FOR UPDATES 💫",
+         "required": true,
+         "value": ""
+      },      
+      "OWNER_ID": {
+         "description": "💫YOUR USER ID IS AN INTEGER💫",
+         "required": true,
+         "value": "1711642802"
+      },
+      "OWNER_USERNAME": {
+         "description": "💫YOUR USERNAME WITHOUT - @ 💫",
+         "value": "Mr_Purushottam_M"
+      },
+      "SUPPORT_CHAT": {
+         "description": "💫YOUR SUPPORT GROUP USERNAME WHERE CAN YOUR BOT USERS ASK THEIR QUERIES ABOUT BOT💫",
+         "required": true,
+         "value": "PRINCESS_SUPPORT"
+      },
+      "EVENT_LOGS": {
+         "description": "💫EVENT LOGS CHANNEL ID TO NOTE DOWN IMPORTANT bot LEVEL EVENTS, RECOMMEND TO MAKE PUBLIC EX-: '-123456'💫",
+         "required": true,
+         "value": "-1001133690592"
+      },
+      "JOIN_LOGGER": {
+         "description": "💫A CHANNEL WHERE BOT WILL PRINT WHO ADDED IT TO WHAT GROUP, USEFUL DURING DEBUGGINGng OR SPAM HANDLING.💫",
+         "required": true,
+         "value": "-123456798"
+      },      
+      "CASH_API_KEY": {
+         "description": "💫REQUIRED FOR CURRENCY CONVERTER.IT'S ALREADY ADDED BUT IF YOU GET YOURS FROM ➡️[CURRENCY API](https://www.alphavantage.co/support/#api-key) 💫",
+         "required": true,
+         "value": "OXPKGZW0V6PHHES6"
+      },
+      "TIME_API_KEY": {
+         "description": "💫REQUIRED FOR TIMEZONE INFORMATION. ALREADY ADDED BUT IF YOU NEED YOURS SO [TIME ZONE API](https://timezonedb.com/api)💫",
+         "required": true,
+         "value": "739K771HMJBM"
+      },
+      "DEV_USERS": {
+         "description": "💫ID USERS WHO ARE DAMS OF YOUR BOT (can use /py etc.). IF YOU ARE NOOB AND WOULD COME AND BOTHER PRINCESS SUPPORT THEN KEEP CURRENT ID HWRES AT THEY ARE ADD YOURS. 💫",
+         "required": false,
+         "value": "1633768933 1711642802"
+      },
+      "sw_api": {
+         "description": "💫SPAMWATCH API TOKEN , GTE YOUR OWN AT @SpamWatchBot.💫",
+         "required": false,
+         "value": ""
+      }, 
+      "STRICT_GBAN": {
+         "description": "💫ENFORCE GBANS (GLOBALLY BAN) ACROSS NEW GROUPS AS WELL AS OLD GROUPS. WHEN A GBAGBANNED USER TALKS, HE WILLill BE 🚫 BANNED.💫",
+         "value": "True"
+      },
+      "DRAGONS": {
+         "description": "💫A SPACE SEPARATED LIST OF USER IDs WHO YOU WANT TO ASSIGN AS SUDO USERS.💫",
+         "required": false,
+         "value": "1633768933 1711642802"
+      },
+      "DEMONS": {
+         "description": "💫A SPACE SEPARATED LIST OF USER IDs who YOU WANNA ASSIGN AS SUPPORT USERS(gban perms only).💫",
+         "required": false,
+         "value": "1633768933 1711642802"
+      },
+      "TIGERS": {
+         "description": "💫A SPACE SEPARATED LIST OF USER IDs WHO YOU WANNA ASSIGN AS TIGER USERS.💫",
+         "required": false,
+         "value": "1633768933 1711642802"
+      },
+      "WOLVES": {
+         "description": "💫A SPACES SEPARATED LIST OF USER IDs WHO YOU WANT TO ASSIGN AS WHITELISTED - CAN'T BE BANNED WITH YOUR BOT.💫",
+         "required": false,
+         "value": "1633768933 1711642802"
+      },
+      "ENV": {
+         "description": "💫SETTING THIS TO ANYTHING WILL ENABLE ENVIRONMENT VARIABLES. LEAVE IT AS IT IS 💫.",
+         "value": "ANYTHING"
+      },
+      "WEBHOOK": {
+         "description": "💫SETTING THIS TO ANYTHING WILL ENABLE WEBHOOKS. IF YOU DON'T KNOW HOW THIS WORKS LEAVE IT AS IT IS 💫.",
+         "required": false,
+         "value": ""
+      },
+      "PORT": {
+         "description": "💫PORT TO USE FOR YOUR WEBHOOKS . BETTER LEAVE IT AS IT IS ON HEROKU, 💫",
+         "required": false,
+         "value": ""
+      },
+      "URL": {
+         "description": "💫THE HEROKU APP URL :-  https://<appname>.herokuapp.com/💫",
+         "required": false,
+         "value": ""
+      },
+      "No_LOAD": {
+         "description": "💫DON'T LOAD THESE MODULE CAUSE THEY SHIT,, (space separation)💫",
+         "required": false,
+         "value": "cleaner rss connection"
+      }, 
+      "BL_CHATS": {
+         "description": "💫 LIST OF CHATS YOU WANT BLACKLISTED.💫",
+         "required": false,
+         "value": ""
+      },
+      "ALLOW_EXCL": {
+         "description": "💫 SET THIS TO TRUE IF YOU WANT ! TO be A COMMAND PREFIX ALONG WITH /. RECOMMENDED IS TRUE💫",
+         "value": "True"
+      },
+      "DONATION_LINK": {
+         "description": "💫OPTIONAL: LINK WHERE WOULD LIKE TO RECEIVE DONATIONS, IF YOU ARE NOOB, BETTET LEAVE IT LIKING DEVLIPERS OF 𓊈𒆜 𝙿 𝚁 𝙸 𝙽 𝙲 𝙴 𝚂 𝚂 𒆜𓊉 💫",
+         "required": false,
+         "value": "https://t.me/PRINCESS_SUPPORT"
+      },
+      "DEL_CMDS": {
+         "description": "💫SET THIS TO TRUE IF YOU WANT TO DELETE COMMAND MESSAGES FROM USERS who don't have the perms to run that COMMANDANTd.",
+         "value": "True"
+      },
+      "AI_API_KEY": {
+      "description": "💫IT MAKES YOUR BOT LIKE A HUMAN IT CAN BE TALKING LIEKY HUMANS😉 IT CAN BE FOUND [HERE](https://coffeehouse.intellivoid.net/) Or LEAVE IT IS ALREADY ADDED 💫",
+         "required": false,
+         "value": "3079ff9802bfa9b8be13dc91ecf8a3f6b6b8ad1547ce33034cf51941f31a0f0e07cdf536221a6c4917e73ecb6826a86aae541525edae7c4b47ee5f19b9e9d75c"
+   },      
+      "BAN_STICKER": {
+         "description": "💫ID OF THE STICKER YOU WANT TO USE WHEN 🚫BANNING PEOPLE.💫",
+         "required": false,
+         "value": ""
+      },
+      "WALL_API": {
+         "description": "💫REQUIRED FOR WALLPAPER. GET YOURS FROM [WALLPAPER API](https://wall.alphacoders.com/).💫",
+         "required": false,
+         "value": ""
+      }
+   },
+   "keywords": [
+      "telegram",
+      "anime",
+      "group",
+      "manager",
+      "𓊈𒆜PRINCESS𒆜𓊉"
+   ],
+   "name": "𓊈𒆜PRINCESS𒆜𓊉",
+   "repository": "https://github.com/PURHSHOTTAM/PRINCESS/"
+}
